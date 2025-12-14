@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARCTYX™ – Doudoune Sans Manches Premium / Premium Sleeveless Puffer Vest</title>
+  <meta name="description" content="Doudoune sans manches premium au design urbain, légère, chaude et idéale pour un style moderne en toute saison." />
+  <style>
+    :root {
+      --bg:#0b0d10;
+      --card:#121620;
+      --muted:#9aa4b2;
+      --text:#e8edf5;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 14px 40px rgba(0,0,0,.45);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% 0%, rgba(255,255,255,.10), transparent 55%),
+                  radial-gradient(900px 600px at 80% 15%, rgba(255,255,255,.07), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 4px 16px}
+    .brand{display:flex;gap:10px;align-items:center;letter-spacing:.6px}
+    .logo{width:34px;height:34px;border-radius:12px;background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,.06));border:1px solid var(--border);box-shadow: var(--shadow)}
+    .brand h1{font-size:14px;margin:0;font-weight:700}
+    .top-actions{display:flex;gap:10px;align-items:center}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;background: rgba(255,255,255,.06);border:1px solid var(--border);color:var(--text);cursor:pointer;user-select:none;transition: transform .12s ease, background .12s ease;font-weight:650;font-size:13px}
+    .pill:hover{transform:translateY(-1px);background:rgba(255,255,255,.09)}
+    .hero{display:grid;grid-template-columns: 1.1fr .9fr;gap:18px;align-items:start;margin-top:6px}
+    @media (max-width: 900px) { .hero{grid-template-columns:1fr;} }
+    .card{background: rgba(18,22,32,.78);border: 1px solid var(--border);border-radius: var(--radius);box-shadow: var(--shadow);overflow:hidden}
+    .gallery{padding:14px}
+    .main-img{width:100%;aspect-ratio: 4/3;border-radius: 18px;object-fit: cover;border:1px solid var(--border);background: rgba(255,255,255,.03)}
+    .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+    .thumb{width:100%;aspect-ratio: 1/1;border-radius: 16px;object-fit: cover;border:1px solid var(--border);cursor:pointer;opacity:.92;transition: transform .12s ease, opacity .12s ease}
+    .thumb:hover{transform:translateY(-1px);opacity:1}
+    .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .badge{font-size:12px;padding:8px 10px;border-radius:999px;border:1px solid var(--border);background: rgba(255,255,255,.06);color:var(--muted);font-weight:650}
+    .buy{padding:18px 16px}
+    .title{font-size:22px;line-height:1.15;margin:0 0 10px;font-weight:800}
+    .sub{color:var(--muted);margin:0 0 14px;font-size:14px;line-height:1.5}
+    .price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:10px 0 16px}
+    .price .now{font-size:28px;font-weight:900}
+    .price .old{font-size:14px;color:var(--muted);text-decoration:line-through}
+    .price .save{font-size:12px;color:var(--text);padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.06);font-weight:750}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width: 520px) { .grid2{grid-template-columns:1fr;} }
+    label{display:block;font-size:12px;color:var(--muted);margin:0 0 8px;font-weight:700}
+    select{width:100%;background: rgba(0,0,0,.22);color: var(--text);border: 1px solid var(--border);border-radius: 14px;padding:12px 12px;outline:none;font-size:14px;font-weight:650}
+    .cta{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn{flex:1 1 220px;border-radius: 16px;border: 1px solid rgba(255,255,255,.14);padding:13px 14px;cursor:pointer;font-weight:850;letter-spacing:.2px;background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,.08));color: var(--text);transition: transform .12s ease, filter .12s ease;text-align:center;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:10px}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+    .btn.secondary{background: rgba(255,255,255,.05);font-weight:750;flex: 0 1 auto}
+    .note{font-size:12px;color:var(--muted);line-height:1.45;margin:10px 0 0}
+    .section{margin-top:18px}
+    .section h3{margin:0 0 10px;font-size:16px}
+    details{border:1px solid var(--border);border-radius: 16px;background: rgba(255,255,255,.04);padding:12px 12px;margin:10px 0}
+    summary{cursor:pointer;font-weight:800}
+    details p{margin:10px 0 0;color:var(--muted);line-height:1.6;font-size:14px}
+    .reviews{display:grid;gap:10px}
+    .review{border:1px solid var(--border);border-radius: 18px;background: rgba(255,255,255,.04);padding:12px 12px}
+    .review .top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+    .stars{letter-spacing:1px}
+    .review p{margin:8px 0 0;color:var(--muted);line-height:1.55;font-size:14px}
+    .video-card{padding:14px}
+    video{width:100%;border-radius: 18px;border:1px solid var(--border);background: rgba(255,255,255,.03)}
+    .video-wrap{position:relative}
+    .unmute{position:absolute;left:12px;bottom:12px;border:1px solid rgba(255,255,255,.18);background: rgba(0,0,0,.55);backdrop-filter: blur(8px);-webkit-backdrop-filter: blur(8px);color:var(--text);padding:10px 12px;border-radius:999px;font-weight:850;cursor:pointer}
+    .unmute:active{transform:translateY(1px)}
+
+    footer{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}
+    .small{font-size:12px;color:var(--muted)}
+  
+    .reviews-card .stars{font-size:14px;letter-spacing:1px;margin:2px 0 10px;color:#f5c542}
+    .review-item{border-top:1px solid var(--border);padding:12px 0}
+    .review-item:first-of-type{border-top:none;padding-top:0}
+    .review-meta{color:var(--muted);font-size:13px;margin-top:6px}
+
+    /* --- TikTok-style social proof --- */
+    .social-proof{display:grid;gap:10px}
+    .proof-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .proof-count{font-weight:800;font-size:13px;color:var(--text);background:rgba(255,255,255,.06);border:1px solid var(--border);padding:8px 10px;border-radius:999px}
+    .tt-list{display:grid;gap:10px}
+    .tt-item{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:flex-start;border:1px solid var(--border);border-radius:18px;background:rgba(255,255,255,.04);padding:12px}
+    .tt-avatar{width:44px;height:44px;border-radius:999px;display:grid;place-items:center;font-weight:900;border:1px solid var(--border);background:rgba(255,255,255,.07)}
+    .tt-meta{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .tt-name{font-weight:800}
+    .tt-verified{font-size:12px;color:var(--muted)}
+    .tt-text{margin:6px 0 0;color:var(--muted);line-height:1.5;font-size:14px}
+    .tt-actions{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}
+    .pill{font-size:12px;color:var(--muted);border:1px solid var(--border);background:rgba(255,255,255,.03);padding:6px 10px;border-radius:999px}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>ARCTYX™</h1>
+          <div class="small" data-i18n="tagline">Édition urbaine — chaleur & style</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="pill" id="langBtn" type="button"><span id="langLabel">FR</span> <span class="small">/ EN</span></button>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card gallery">
+        <img id="mainImg" class="main-img" src="assets/black.jpg" alt="ARCTYX vest photo" />
+        <div class="thumbs">
+          <img class="thumb" src="assets/black.jpg" alt="Black" data-color="BLACK" />
+          <img class="thumb" src="assets/blue.jpg" alt="Blue" data-color="BLUE" />
+          <img class="thumb" src="assets/olive.jpg" alt="Olive" data-color="OLIVE" />
+          <img class="thumb" src="assets/yellow.jpg" alt="Yellow" data-color="YELLOW" />
+        </div>
+        <div class="badge-row">
+          <div class="badge" data-i18n="b1">Isolation chaude</div>
+          <div class="badge" data-i18n="b2">Coupe moderne</div>
+          <div class="badge" data-i18n="b3">Poches zippées</div>
+          <div class="badge" data-i18n="b4">Look premium</div>
+        </div>
+
+        <div class="section video-card">
+          <h3 data-i18n="videoTitle">Vidéo produit</h3>
+          <div class="video-wrap">
+            <video id="productVideo" class="product-video" playsinline muted autoplay loop preload="auto" poster="assets/black.jpg">
+              <source src="assets/video.mp4" type="video/mp4" />
+              <source src="assets/video.mov" type="video/quicktime" />
+            </video>
+            <button class="unmute" id="unmuteBtn" type="button" data-i18n="unmute">Activer le son</button>
+          </div>
+          <p class="small" data-i18n="videoAutoplayNote">La vidéo se lance automatiquement (muette). Touchez “Activer le son” si vous voulez l’audio.</p>
+        </div>
+
+        <div class="section social-proof" id="socialProof">
+          <div class="proof-head">
+            <h3>⭐ Avis clients / Customer Reviews</h3>
+            <div class="proof-count">1,247+ clients satisfaits / 1,247+ happy customers</div>
+          </div>
+
+          <div class="tt-list">
+            <div class="tt-item">
+              <div class="tt-avatar">MD</div>
+              <div>
+                <div class="tt-meta">
+                  <div>
+                    <div class="tt-name">Marc D.</div>
+                    <div class="tt-verified">✅ Achat vérifié / Verified purchase</div>
+                  </div>
+                  <div class="pill">★★★★★</div>
+                </div>
+                <p class="tt-text">“Qualité incroyable, tient chaud sans être lourd. Le look est vraiment premium.” 🔥</p>
+                <div class="tt-actions">
+                  <span class="pill">❤️ 1.2k</span>
+                  <span class="pill">🛡️ Paiement sécurisé</span>
+                  <span class="pill">🚚 Livraison suivie</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tt-item">
+              <div class="tt-avatar">AP</div>
+              <div>
+                <div class="tt-meta">
+                  <div>
+                    <div class="tt-name">Alex P. (MTL)</div>
+                    <div class="tt-verified">✅ Achat vérifié / Verified purchase</div>
+                  </div>
+                  <div class="pill">★★★★★</div>
+                </div>
+                <p class="tt-text">“Reçu rapidement, parfait avec un hoodie. J’ai pris XL, taille nickel.” ✅</p>
+                <div class="tt-actions">
+                  <span class="pill">❤️ 860</span>
+                  <span class="pill">💎 Look propre</span>
+                  <span class="pill">🌬️ Coupe anti-vent</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tt-item">
+              <div class="tt-avatar">JR</div>
+              <div>
+                <div class="tt-meta">
+                  <div>
+                    <div class="tt-name">Jason R.</div>
+                    <div class="tt-verified">✅ Verified purchase / Achat vérifié</div>
+                  </div>
+                  <div class="pill">★★★★★</div>
+                </div>
+                <p class="tt-text">“Fits perfectly. Premium finish and super comfy. Worth it.” 💯</p>
+                <div class="tt-actions">
+                  <span class="pill">❤️ 740</span>
+                  <span class="pill">📦 Easy checkout</span>
+                  <span class="pill">✨ Premium feel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="small">💬 Astuce : écris-nous en DM pour une recommandation de taille / DM us for sizing help.</p>
+        </div>
+
+
+</div>
+      </section>
+
+      <aside class="card buy">
+        <h2 class="title">ARCTYX™ – Doudoune Sans Manches Premium / Premium Sleeveless Puffer Vest</h2>
+        <p class="sub" data-i18n="short">Doudoune sans manches premium au design urbain, légère, chaude et idéale pour un style moderne en toute saison.</p>
+
+        <div class="price">
+          <div class="now">$129.99 <span class="small">CAD</span></div>
+          <div class="old">$150.00 CAD</div>
+          <div class="save" id="saveBadge"></div>
+        </div>
+
+        <div class="grid2">
+          <div>
+            <label for="colorSel" data-i18n="colorLabel">Couleur</label>
+            <select id="colorSel">
+              <option value="BLACK">Black / Noir</option>
+              <option value="BLUE">Blue / Bleu</option>
+              <option value="OLIVE">Olive / Vert olive</option>
+              <option value="YELLOW">Yellow / Jaune</option>
+            </select>
+          </div>
+          <div>
+            <label for="sizeSel" data-i18n="sizeLabel">Taille</label>
+            <select id="sizeSel">
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" id="buyBtn" href="#" target="_blank" rel="noopener" data-i18n="buyBtn">Acheter maintenant</a>
+          <button class="btn secondary" id="copyBtn" type="button" data-i18n="copyBtn">Copier le lien</button>
+        </div>
+
+        <p class="note" id="variantNote"></p>
+
+        <div class="section">
+          <h3 data-i18n="whyTitle">Pourquoi ARCTYX™</h3>
+          </div>
+
+        <div class="section">
+          <h3 data-i18n="policyTitle">Livraison & garantie</h3>
+          <p class="sub" data-i18n="policyBody">Livraison suivie • Support rapide • Garantie satisfaction 14 jours.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="small">© <span id="year"></span> ARCTYX™ — <span data-i18n="footer">Tous droits réservés</span></div>
+    </footer>
+  </div>
+
+<script>
+  const STRIPE_LINKS = {
+  "OLIVE_XL": "https://buy.stripe.com/00wfZh5g283Bgd321gcV20p",
+  "OLIVE_L": "https://buy.stripe.com/bJecN5eQC97F7GxdJYcV20o",
+  "OLIVE_M": "https://buy.stripe.com/8x200j9wifw3e4V21gcV20n",
+  "OLIVE_S": "https://buy.stripe.com/8x200j9wi4Rp0e50XccV20m",
+  "BLACK_XL": "https://buy.stripe.com/00wbJ137UgA7gd321gcV20l",
+  "BLACK_L": "https://buy.stripe.com/28E14n6k62Jh2mdgWacV20k",
+  "BLACK_M": "https://buy.stripe.com/dRm00j4bYcjRaSJ35kcV20j",
+  "BLACK_S": "https://buy.stripe.com/00w5kDfUG2Jhf8ZfS6cV20i",
+  "YELLOW_XL": "https://buy.stripe.com/14AeVdgYKgA73qh21gcV20h",
+  "YELLOW_L": "https://buy.stripe.com/00w9AT7oafw3aSJ7lAcV20g",
+  "YELLOW_M": "https://buy.stripe.com/8x29AT8se0B9d0RfS6cV20f",
+  "YELLOW_S": "https://buy.stripe.com/9B6dR90ZM1Fd1i949ocV20e",
+  "BLUE_XL": "https://buy.stripe.com/eVqbJ1fUGgA7f8Z5dscV20d",
+  "BLUE_L": "https://buy.stripe.com/5kQbJ10ZMabJ2md49ocV20c",
+  "BLUE_M": "https://buy.stripe.com/eVqcN5fUG4Rp7Gx35kcV20b",
+  "BLUE_S": "https://buy.stripe.com/14A3cvbEq83B0e535kcV20a"
+};
+  const COLOR_TO_ASSET = {
+    "BLACK": "assets/black.jpg",
+    "BLUE": "assets/blue.jpg",
+    "OLIVE": "assets/olive.jpg",
+    "YELLOW": "assets/yellow.jpg",
+  };
+
+  const I18N = {
+    fr: {
+      tagline: "Édition urbaine — chaleur & style",
+      short: "Doudoune sans manches premium au design urbain, légère, chaude et idéale pour un style moderne en toute saison.",
+      b1:"Isolation chaude", b2:"Coupe moderne", b3:"Poches zippées", b4:"Look premium",
+      videoTitle:"Vidéo produit",
+      unmute:"Activer le son",
+      videoAutoplayNote:"La vidéo se lance automatiquement (muette). Touchez “Activer le son” si vous voulez l’audio.",
+      videoFallback:"Si la vidéo ne se lance pas, essayez de recharger la page ou changez de navigateur.",
+      colorLabel:"Couleur",
+      sizeLabel:"Taille",
+      buyBtn:"Acheter maintenant",
+      copyBtn:"Copier le lien",
+      whyTitle:"Pourquoi ARCTYX™",
+      why1T:"Chaleur sans lourdeur", why1B:"Isolation efficace et confortable, parfaite pour superposer sur un hoodie ou un pull.",
+      why2T:"Style premium instantané", why2B:"Design matelassé brillant, look propre et moderne — idéal ville, travail, sorties.",
+      why3T:"Poches zippées", why3B:"Téléphone, clés, portefeuille : tout reste sécurisé.",
+      reviewsTitle:"Avis clients",
+      r1:"“Très belle qualité, coupe parfaite. Je la porte tous les jours avec un hoodie.”",
+      r2:"“Look premium et super chaude. Les poches zippées c’est un gros plus.”",
+      r3:"“Reçue rapidement, très satisfait. Je recommande pour l’hiver au Canada.”",
+      faqTitle:"FAQ",
+      faq1T:"Comment choisir la taille ?",
+      faq1B:"Choisis ta taille habituelle. Pour un fit plus ample (hoodie épais), prends une taille au-dessus.",
+      faq2T:"Livraison & suivi",
+      faq2B:"Livraison suivie partout au Canada. Le numéro de suivi est envoyé par email après l’expédition.",
+policyTitle:"Livraison & garantie",
+      policyBody:"Livraison suivie • Support rapide • Garantie satisfaction 14 jours.",
+      footer:"Tous droits réservés",
+      variantTpl:(c,s)=>`Sélection: ${({BLACK:"Noir",BLUE:"Bleu",OLIVE:"Vert olive",YELLOW:"Jaune"})[c]} — Taille ${s}.`,
+      copied:"Lien copié ✅",
+      missing:"Lien introuvable pour cette variante."
+    },
+    en: {
+      tagline: "Urban edition — warmth & style",
+      short: "Premium sleeveless puffer vest with a modern urban design, lightweight warmth, and all-season versatility.",
+      b1:"Warm insulation", b2:"Modern fit", b3:"Zippered pockets", b4:"Premium look",
+      videoTitle:"Product video",
+      unmute:"Unmute",
+      videoAutoplayNote:"Video plays automatically (muted). Tap “Unmute” if you want sound.",
+      videoFallback:"If the video doesn’t play, refresh the page or try another browser.",
+      colorLabel:"Color",
+      sizeLabel:"Size",
+      buyBtn:"Buy now",
+      copyBtn:"Copy link",
+      whyTitle:"Why ARCTYX™",
+      why1T:"Warm without bulk", why1B:"Efficient insulation and comfort — perfect over a hoodie or sweater.",
+      why2T:"Instant premium style", why2B:"Glossy quilted finish for a clean modern look — city, work, nights out.",
+      why3T:"Zippered pockets", why3B:"Phone, keys, wallet — stays secure.",
+      reviewsTitle:"Customer reviews",
+      r1:"“Great quality and perfect fit. I wear it daily over a hoodie.”",
+      r2:"“Premium look and very warm. Zipper pockets are a big plus.”",
+      r3:"“Arrived fast, very happy. Perfect for Canadian winter.”",
+      faqTitle:"FAQ",
+      faq1T:"How do I choose my size?",
+      faq1B:"Choose your usual size. For a roomier fit (thick hoodie), go one size up.",
+      faq2T:"Shipping & tracking",
+      faq2B:"Tracked shipping across Canada. Tracking number is emailed after dispatch.",
+policyTitle:"Shipping & guarantee",
+      policyBody:"Tracked shipping • Fast support • 14-day satisfaction guarantee.",
+      footer:"All rights reserved",
+      variantTpl:(c,s)=>`Selected: ${({BLACK:"Black",BLUE:"Blue",OLIVE:"Olive",YELLOW:"Yellow"})[c]} — Size ${s}.`,
+      copied:"Link copied ✅",
+      missing:"No link found for this variant."
+    }
+  };
+
+  const $ = (id)=>document.getElementById(id);
+  const mainImg = $("mainImg");
+  const colorSel = $("colorSel");
+  const sizeSel = $("sizeSel");
+  const buyBtn = $("buyBtn");
+  const copyBtn = $("copyBtn");
+  const variantNote = $("variantNote");
+  const productVideo = $("productVideo");
+  const unmuteBtn = $("unmuteBtn");
+  const langBtn = $("langBtn");
+  const langLabel = $("langLabel");
+  let lang = "fr";
+
+  function calcSave(reg, sale) {
+    const r = parseFloat(reg);
+    const s = parseFloat(sale);
+    const pct = Math.round(((r - s) / r) * 100);
+    return pct;
+  }
+  function updateSaveBadge() {
+    const pct = calcSave("150.00", "129.99");
+    $("saveBadge").textContent = lang === "fr" ? `Promo -${pct}%` : `Sale -${pct}%`;
+  }
+  function getStripeLink(color, size) {
+    return STRIPE_LINKS[`${color}_${size}`] || null;
+  }
+  function updateBuyLink() {
+    const color = colorSel.value;
+    const size = sizeSel.value;
+    const url = getStripeLink(color, size);
+    const asset = COLOR_TO_ASSET[color] || mainImg.src;
+    mainImg.src = asset;
+    if (productVideo) productVideo.poster = asset;
+    variantNote.textContent = I18N[lang].variantTpl(color, size);
+    if (url) {
+      buyBtn.href = url;
+      buyBtn.style.opacity = "1";
+      buyBtn.style.pointerEvents = "auto";
+    } else {
+      buyBtn.href = "#";
+      buyBtn.style.opacity = ".55";
+      buyBtn.style.pointerEvents = "none";
+    }
+  }
+  function applyLang(next) {
+    lang = next;
+    langLabel.textContent = lang.toUpperCase();
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      const val = I18N[lang][key];
+      if (typeof val === "string") el.textContent = val;
+    });
+    updateSaveBadge();
+    updateBuyLink();
+  }
+  document.querySelectorAll(".thumb").forEach(t => {
+    t.addEventListener("click", () => {
+      const c = t.getAttribute("data-color");
+      if (!c) return;
+      colorSel.value = c;
+      updateBuyLink();
+    });
+  });
+  colorSel.addEventListener("change", updateBuyLink);
+  sizeSel.addEventListener("change", updateBuyLink);
+
+  copyBtn.addEventListener("click", async () => {
+    const url = buyBtn.href;
+    if (!url || url === "#") {
+      alert(I18N[lang].missing);
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      copyBtn.textContent = I18N[lang].copied;
+      setTimeout(()=> copyBtn.textContent = I18N[lang].copyBtn, 1200);
+    } catch(e) {
+      prompt("Copie ce lien :", url);
+    }
+  });
+
+  langBtn.addEventListener("click", () => {
+    applyLang(lang === "fr" ? "en" : "fr");
+  });
+
+
+  function tryAutoPlayVideo() {
+    if (!productVideo) return;
+    try {
+      const p = productVideo.play();
+      if (p && typeof p.catch === "function") p.catch(()=>{});
+    } catch(e) {}
+  }
+
+  // Try on init + on load (iOS sometimes needs it)
+  tryAutoPlayVideo();
+  window.addEventListener("load", tryAutoPlayVideo);
+
+  // If autoplay is blocked, start at first user interaction
+  ["touchstart","click","scroll"].forEach(evt=>{
+    document.addEventListener(evt, tryAutoPlayVideo, { once:true, passive:true });
+  });
+
+  if (unmuteBtn && productVideo) {
+    unmuteBtn.addEventListener("click", () => {
+      productVideo.muted = false;
+      productVideo.volume = 1;
+      tryAutoPlayVideo();
+      unmuteBtn.style.display = "none";
+    });
+  }
+
+  $("year").textContent = new Date().getFullYear();
+  applyLang("fr");
+</script>
+</body>
+</html>
